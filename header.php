@@ -10,7 +10,6 @@
 <body <?php body_class() ?>>
     <div id="wrapper">
         <div id="container">
-        <?php get_theme_mod('content_width') ?>  hahahahahahah
             <header>
                 <div class="center">
                     <div class="navigationContainer">

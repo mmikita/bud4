@@ -4,7 +4,7 @@ $data = get_theme_mods();
 
 <style>
 .center{
-max-width: <?php echo $data['content_width'].'px'?>;
+max-width: <?php echo get_theme_mod('contentWidth', '1200').'px' ?>;
 margin: 0 auto;
 
 

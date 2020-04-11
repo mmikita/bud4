@@ -18,15 +18,14 @@ function bud4Settings($wp_customize){
 'title' => 'Ustawienia globalne'
     ));
 
-$wp_customize->add_setting('content_width', array(
+$wp_customize->add_setting('contentWidth', array(
         'default' => '1200'
             ));
 
-            $wp_customize->add_control( new WP_Customize_Control($wp_customize, '
-            globalSettings', array(
+            $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'contentWidth-control', array(
         'label' => 'szerokość contentu (px)',
         'section' => 'globalSettings',
-        'settings' => 'content_width'
+        'settings' => 'contentWidth'
             )));
 
 
@@ -40,6 +39,7 @@ $wp_customize->add_setting('content_width', array(
     ));
 
     $wp_customize->add_setting('logo_src');
+
     $wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, '
     logo_settings', array(
 'label' => 'Obrazek',
@@ -48,12 +48,6 @@ $wp_customize->add_setting('content_width', array(
     )));  
 
 
-    $wp_customize->add_control( new WP_Customize_Control($wp_customize, '
-    logo_settings', array(
-'label' => 'Obrazek',
-'section' => 'logo_section',
-'settings' => 'logo_src'
-    )));
 
 }
    
@@ -61,4 +55,7 @@ $wp_customize->add_setting('content_width', array(
 add_action('wp_enqueue_scripts', 'getResources');
 add_action('customize_register', 'bud4Settings');
 add_action('wp_head', 'globalSettings');
+
+
+
 
