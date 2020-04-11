@@ -3,6 +3,13 @@ Theme Name: BUD4
 Version: 1.0
 */
 
+.center{
+max-width: 1200px;
+margin: 0 auto;
+
+
+}
+
 .navigationContainer{
 
 

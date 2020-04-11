@@ -14,11 +14,12 @@
                     <div class="logo">
                         <div class="inner">
                             <a href="#">
-                                <img src="" alt="">
+                                <img src="<?php echo wp_get_attachment_url(get_theme_mod('logo_src'))?>" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="menu"></div>
+                    <div class="clearfix"></div>
                     </div>
                 </div>
             </header>
